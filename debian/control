@@ -1,0 +1,13 @@
+Source: emacs
+Section: unknown
+Priority: optional
+Maintainer: Sig Lange <sig.lange@gmail.com>
+Build-Depends: cdbs,
+    debhelper (>= 7)
+Standards-Version: 3.7.2
+
+Package: emacs
+Architecture: all
+Depends: ${misc:Depends}
+Description: emacs
+ emacs with native compilation
