@@ -9,6 +9,9 @@ all:
 
 clean:
 	echo clean
+distclean:
+	git clean -fqdx
+	dh_clean
 
 install:
 	make install DESTDIR=$(DESTDIR)/opt/emacs
