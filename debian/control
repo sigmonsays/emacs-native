@@ -1,0 +1,16 @@
+Source: emacs28
+Section: unknown
+Priority: optional
+Maintainer: Sig Lange <sig.lange@gmail.com>
+Build-Depends: cdbs,
+    debhelper (>= 7)
+Standards-Version: 3.7.2
+
+Package: emacs28
+Architecture: all
+Depends: ${misc:Depends}
+Provides: editor, emacsen, info-browser, mail-reader, news-reader, emacs-gtk, emacs
+Conflicts: emacs27-nox, emacs27
+Replaces: emacs27-nox, emacs27
+Description: emacs
+ emacs with native compilation
