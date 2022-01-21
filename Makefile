@@ -10,6 +10,8 @@ all:
 
 clean:
 	echo clean
+distclean:
+	git clean -fqdx
 
 install:
 	make install DESTDIR=$(DESTDIR)/usr
