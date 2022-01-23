@@ -14,4 +14,4 @@ distclean:
 	git clean -fqdx
 
 install:
-	( cd emacs && make install DESTDIR=$(DESTDIR)/usr )
+	( cd emacs && make install DESTDIR=$(DESTDIR) )
