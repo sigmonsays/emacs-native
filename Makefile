@@ -5,7 +5,6 @@ all:
 	./autogen.sh
 	./configure --with-native-compilation --prefix=/usr
 	make -j$(NPROC)
-	git checkout Makefile
 
 
 clean:
