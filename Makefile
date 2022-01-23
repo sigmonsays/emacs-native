@@ -1,10 +1,11 @@
 
 NPROC := $(shell nproc)
 
+
 all:
-	./autogen.sh
-	./configure --with-native-compilation --prefix=/usr
-	make -j$(NPROC)
+	( cd emacs && ./autogen.sh )
+	( cd emacs && ./configure --with-native-compilation --prefix=/usr )
+	( cd emacs && make -j$(NPROC) )
 
 
 clean:
@@ -13,4 +14,4 @@ distclean:
 	git clean -fqdx
 
 install:
-	make install DESTDIR=$(DESTDIR)/usr
+	( cd emacs && make install DESTDIR=$(DESTDIR)/usr )
