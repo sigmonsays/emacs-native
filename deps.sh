@@ -1,4 +1,5 @@
 
+sudo apt-get update -qq
 sudo apt install -y  libxpm-dev libjpeg-dev libgnutls28-dev libgif-dev
 sudo apt install -y  libtiff-dev libacl1-dev libgtk-3-dev libwebkit2gtk-4.0-dev
 sudo apt install -y  librsvg2-dev libmagickcore-dev libmagick++-dev
